@@ -1,0 +1,87 @@
+.typical-close {
+  position: absolute;
+  // right: 20px;
+  // top: 30px;
+  z-index: 8;
+  display: block;
+}
+.typical-close::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: -25px 0 0 -25px;
+  border-radius: 50%;
+  background-color: $orange;
+  transform: scale(0) translateZ(0);
+  transition: all 0.45s cubic-bezier(.15,0.2,.1,1);
+}
+
+.typical-close__line-wrap {
+  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%) translateZ(0);
+  transition: margin .2s ease,transform .2s ease 1s,opacity .3s ease;
+  width: 14px;
+  height: 14px;
+  display: block;
+  overflow: hidden;
+}
+.typical-close__line {
+  height: 100%;
+  width: 2px;
+  background: $white;
+  backface-visibility: hidden;
+  position: absolute;
+  border-radius: 5px;
+  left: 6px;
+  transition: opacity 0.2s ease, background-color 0.2s ease;
+
+  animation-duration: .4s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.52, 0.01, 0.16, 1);
+}
+.typical-close__line1 {
+  transform: translateY(0) translateX(0) rotate(45deg);
+  animation-name: crossRightClose;
+  animation-delay: .06s;
+  animation-duration: .15s;
+}
+.typical-close__line2 {
+  transform: translateY(0) translateX(0) rotate(-45deg);
+  animation-name: crossLeftClose;
+  animation-delay: .0s;
+  animation-duration: .15s;
+  
+}
+
+@keyframes crossRight {
+  100% {
+    transform: translateY(0px) translateX(0px) rotate(45deg);
+  }
+}
+
+@keyframes crossLeft {
+  100% {
+    transform: translateY(0px) translateX(0px) rotate(-45deg);
+  }
+}
+
+@keyframes crossLeftClose {
+  100% {
+    transform: translateY(22px) translateX(22px) rotate(-45deg);
+  }
+}
+@keyframes crossRightClose {
+  100% {
+    transform: translateY(22px) translateX(22px) rotate(-45deg);
+  }
+}
+

@@ -1,0 +1,22 @@
+@import 'normalize';
+
+@import '../../node_modules/swiper/swiper.scss';
+@import '../../node_modules/swiper/components/effect-fade/effect-fade.scss';
+@import '../../node_modules/swiper/components/pagination/pagination.scss';
+
+@import 'base/variables';
+@import 'base/fonts';
+@import 'base/base';
+
+
+@import 'blocks/main-menu';
+@import 'blocks/burger';
+@import 'blocks/typical-close';
+@import 'blocks/btn';
+
+
+@import 'blocks/main-head';
+@import 'blocks/main-head-slide';
+
+@import 'blocks/page-header';
+@import 'blocks/page-footer';

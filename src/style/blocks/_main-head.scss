@@ -1,0 +1,98 @@
+.main-head {
+  background: url('/images/content/main-head-bg.png') no-repeat center;
+  background-size: cover;
+  background-color: $white;
+  position: relative;
+  min-height: 810px;
+  &::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    min-height: 250px;
+    background: url('/images/icon/index-head-rectangles.svg') no-repeat center;
+    background-size: contain;
+  }
+}
+.main-head__container {
+  padding-bottom: 50px;
+  padding-top: 263px;
+}
+.main-head__pagination {
+  display: flex;
+  flex-direction: column;
+  
+}
+.main-head__slider-bullet {
+  width: 18px;
+  height: 18px;
+  background: url('/images/icon/hexagon.svg') no-repeat center;
+  background-size: cover;
+  position: relative;
+  border-radius: 0;
+  opacity: 1;
+  &::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    left: 50%;
+    top: 50%;
+    width: 22px;
+    height: 22px;
+    background: url('/images/icon/hexagon-fill.svg') no-repeat center;
+    background-size: cover;
+    transform: translate(-50%, -50%) scale(0);
+    transition: all 0.3s ease-out;
+  }
+}
+.swiper-pagination-bullet-active {
+  &::before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+.main-head__slider > .main-head__pagination {
+  position: absolute;
+  top: 50%;
+  right: 55px;
+  left: initial;
+  bottom: initial;
+  transform: translateY(-50%);
+  width: auto;
+  z-index: 5;
+
+}
+.main-head__slider > .main-head__pagination .main-head__slider-bullet {
+  margin: 0;
+  margin-bottom: 15px;
+}
+@media (max-width: 1200px) {
+  .main-head::before {
+    min-height: 150px;
+  }
+}
+@media (max-width: 1024px) {
+  .main-head__slider {
+    padding-bottom: 65px;
+  }
+  .main-head__slider > .main-head__pagination {
+    top: initial;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: 0;
+  }
+  .main-head__pagination {
+    flex-direction: row;
+  }
+  .main-head__slider > .main-head__pagination .main-head__slider-bullet {
+    margin-bottom: 0;
+    margin-right: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .main-head::before {
+    min-height: 100px;
+  }
+}

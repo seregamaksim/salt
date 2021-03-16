@@ -1,0 +1,22 @@
+block variables
+
+doctype html
+html(lang="ru-RU")
+  head
+    meta(charset="utf-8")
+
+    block page-title
+      title #{title}
+
+    include ../modules/head
+    
+
+  body(class=bodyClass)
+    include ../modules/header
+    block content
+    include ../modules/footer
+
+    block scripts
+      script(src="https://polyfill.io/v3/polyfill.min.js?features=default" defer)
+      script(src='/js/app.min.js' defer)
+
