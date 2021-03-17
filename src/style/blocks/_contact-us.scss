@@ -1,0 +1,35 @@
+.contact-us {
+  background: url('/images/content/get-started-bg.png') no-repeat center;
+  background-size: cover;
+  background-color: $purple;
+}
+.contact-us__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 90px;
+  padding-bottom: 75px;
+}
+.contact-us__title {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: bold;
+  color: $white;
+}
+@media (max-width: 768px) {
+  .contact-us__container {
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .contact-us__title {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .contact-us__title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}

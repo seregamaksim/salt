@@ -1,0 +1,11 @@
+.index__head,
+.index__find-out-more {
+  margin-bottom: 135px;
+}
+
+@media (max-width: 768px) {
+  .index__head,
+  .index__find-out-more {
+    margin-bottom: 70px;
+  }
+}

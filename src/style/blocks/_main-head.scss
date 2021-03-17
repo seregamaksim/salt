@@ -3,7 +3,6 @@
   background-size: cover;
   background-color: $white;
   position: relative;
-  min-height: 810px;
   &::before {
     content: '';
     display: inline-block;
@@ -18,8 +17,11 @@
   }
 }
 .main-head__container {
-  padding-bottom: 50px;
+  padding-bottom: 46px;
   padding-top: 263px;
+}
+.main-head__slider-block {
+  margin-bottom: 133px;
 }
 .main-head__pagination {
   display: flex;
@@ -68,6 +70,30 @@
   margin: 0;
   margin-bottom: 15px;
 }
+
+.main-head__find-more-block {
+  margin: 0 auto;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.main-head__find-more-title {
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: bold;
+  color: $white;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.main-head__find-more {
+  display: inline-block;
+  position: relative;
+  width: 61px;
+  height: 71px;
+  background: url('/images/icon/scroll-down.png') no-repeat center;
+  background-size: cover;
+  
+}
 @media (max-width: 1200px) {
   .main-head::before {
     min-height: 150px;
@@ -94,5 +120,12 @@
 @media (max-width: 768px) {
   .main-head::before {
     min-height: 100px;
+  }
+  .main-head__container {
+    padding-top: 150px;
+    
+  }
+  .main-head__slider-block {
+    margin-bottom: 50px;
   }
 }

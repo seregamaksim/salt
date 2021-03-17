@@ -8,4 +8,13 @@
   border-radius: 4px;
   padding: 12px 35px;
   background-color: $orange;
+  transition: all 0.3s ease-out;
+}
+.btn--middle {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+.btn:hover,
+.btn:focus {
+  background-color: lighten($color: $orange, $amount: 5);
 }
