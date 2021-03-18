@@ -1,8 +1,10 @@
 @import 'normalize';
 
-@import '../../node_modules/swiper/swiper.scss';
-@import '../../node_modules/swiper/components/effect-fade/effect-fade.scss';
-@import '../../node_modules/swiper/components/pagination/pagination.scss';
+// @import 'vendor/splide';
+@import '../../node_modules/@glidejs/glide/src/assets/sass/glide.core.scss';
+// @import '../../node_modules/swiper/swiper.scss';
+// @import '../../node_modules/swiper/components/effect-fade/effect-fade.scss';
+// @import '../../node_modules/swiper/components/pagination/pagination.scss';
 @import '../../node_modules/lightgallery.js/src/sass/lightgallery.scss';
 
 @import 'base/variables';

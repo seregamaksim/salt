@@ -9,8 +9,8 @@ export function headerScroll() {
       header.classList.add('page-header--transform');
     } 
   } else {
-    if(body.getBoundingClientRect().top !== 0) {
-      header.classList.remove('page-header--transform','page-header--active');
+    if(body.getBoundingClientRect().top < 0) {
+      header.classList.remove('page-header--transform');
       header.classList.add('page-header--active');
       
     } else if(body.getBoundingClientRect().top >= -100) {
