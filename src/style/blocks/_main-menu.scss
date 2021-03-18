@@ -30,7 +30,8 @@
   }
 }
 .main-menu__link:hover,
-.main-menu__link:focus {
+.main-menu__link:focus,
+.main-menu__link.active {
   &::before {
     transform: scale(1);
   }

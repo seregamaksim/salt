@@ -1,0 +1,84 @@
+.page-footer__top {
+  background-color: $footerGray;
+}
+.page-footer__bottom {
+  background-color: $footerGray2;
+  padding-top: 8px;
+  padding-bottom: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+}
+.page-footer__twitter-widget {
+  width: 100%;
+  max-width: 300px;
+  margin-right: 105px;
+  // min-height: 300px;
+  // background-color: $orange;
+}
+.page-footer__container {
+  padding-top: 55px;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: flex-start;
+}
+.page-footer__top {
+  position: relative;
+}
+.page-footer__logo {
+  display: inline-block;
+  position: absolute;
+  right: 33px;
+  bottom: 33px;
+}
+
+.page-footer__copyright {
+  font-family: $ralewayFont;
+  font-size: 10px;
+  line-height: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: $textGray2;
+}
+.page-footer__copyright-rhombus {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: url('/images/icon/hexagon-fill.svg') no-repeat center;
+  background-size: cover;
+  margin: 0 5px;
+}
+
+@media (max-width: 1250px) {
+  .page-footer__container {
+    justify-content: space-between;
+  }
+  .page-footer__twitter-widget {
+    margin-right: 50px;
+  } 
+}
+@media (max-width: 1024px) {
+  .page-footer__twitter-widget {
+    margin-right: 20px;
+  }
+}
+@media (max-width: 900px) {
+  .page-footer__container {
+    flex-direction: column-reverse;
+  }
+  .page-footer__twitter-widget {
+    margin: 0 auto;
+  }
+  .page-footer__nav {
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 600px) {
+  .page-footer__logo {
+    display: none;
+  }
+  .page-footer__nav {
+    width: 100%;
+  }
+}

@@ -4,6 +4,21 @@
   right: 0;
   top: 0;
   z-index: 10;
+  transition: all 0.3s ease-out;
+
+}
+.page-header--transform {
+  transform: translateY(-105%);
+}
+.page-header--active {
+  background-color: $purple;
+  .page-header__logo-img {
+    width: 45px;
+  }
+}
+
+.page-header__logo-img {
+  transition: all 0.3s ease-out;
 }
 .page-header__container {
   display: flex;
