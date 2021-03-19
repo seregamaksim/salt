@@ -7,13 +7,13 @@
     content: '';
     display: inline-block;
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     right: 0;
     width: 100%;
-    min-height: 250px;
+    min-height: 251px;
     background: url('/images/icon/index-head-rectangles.svg') no-repeat center;
-    background-size: contain;
+    background-size: 100% 100%;
   }
 }
 .main-head__container {
@@ -50,11 +50,15 @@
     transition: all 0.3s ease-out;
   }
 }
-.swiper-pagination-bullet-active {
+
+.main-head__slider-bullet:hover,
+.main-head__slider-bullet:focus,
+.main-head__slider-bullet--active {
   &::before {
     transform: translate(-50%, -50%) scale(1);
   }
 }
+
 .main-head__slider > .main-head__pagination {
   position: absolute;
   top: 50%;

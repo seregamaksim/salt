@@ -47,11 +47,11 @@
   background-color: $purple2;
 }
 .twitter-widget__content {
-  padding: 20px 30px;
+  padding: 20px 15px;
   background-color: $white;
   max-height: 240px;
   overflow: auto;
-  width: calc(100% + 17px);
+  flex-grow: 1;
 }
 
 .twitter-widget__tweet {
@@ -79,8 +79,3 @@
   color: $darkGray2;
 }
 
-@media (max-width: 1024px) {
-  .twitter-widget__content {
-    width: 100%;
-  }
-}

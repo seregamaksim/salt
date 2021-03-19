@@ -12,6 +12,7 @@
 }
 .page-header--active {
   background-color: $purple;
+  box-shadow: 0 -8px 37px -5px rgba($color: $black, $alpha: 0.3);
   .page-header__logo-img {
     width: 45px;
   }

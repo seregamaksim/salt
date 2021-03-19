@@ -1,15 +1,11 @@
-// import Swiper from 'swiper/bundle';
-// import Splide from '@splidejs/splide';
 import Glide from '@glidejs/glide';
 
 const slidersOption = {
   mainSlider: {
-    type: 'fade',
-    arrows: false,
+    autoplay: 3000,
     classes: {
-      pagination: 'splide__pagination main-head__pagination',
+      activeNav: 'main-head__slider-bullet--active',
     }
-
   }
 };
 
@@ -18,7 +14,7 @@ export function slidersInit() {
   if(sliders.length > 0) {
     sliders.forEach(slider => {
       if(slider.classList.contains('js-slider--main')) {
-        let myGlide = new Glide(slider);
+        let myGlide = new Glide(slider, slidersOption.mainSlider);
         createBullets(myGlide);
         myGlide.mount().update();
       }
@@ -30,10 +26,9 @@ function createBullets(glide) {
   const slider = glide.selector;
   const bulletCount = slider.querySelectorAll('.glide__slide').length;
   const bulletWrapper = slider.querySelector('.glide__bullets');
-  console.log(bulletCount);
   for (let index = 0; index < bulletCount; index++) {
     const button = document.createElement('button');
-    button.className = 'glide__bullet';
+    button.classList.add('glide__bullet', 'main-head__slider-bullet');
     button.setAttribute('data-glide-dir', '=' + index);
     bulletWrapper.appendChild(button);
   }

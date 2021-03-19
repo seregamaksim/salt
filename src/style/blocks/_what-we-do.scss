@@ -28,16 +28,15 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  // display: grid;
-  // grid-template-columns: 1fr 1fr 1fr;
-  // gap: 30px;
+
+  // Нужны просто, чтобы совпало с нынешним макетом, хотя, в нём, вероятно, ошибка
+  margin-left: 8px;
+  margin-right: -10px;
 }
 .what-we-do__item {
   width: 100%;
-  max-width: 283px;
-  margin-bottom: 30px;
-  // width: 32%;
-  // margin-right: 3%;
+  max-width: 285px;
+  margin-bottom: 54px;
   display: flex;
   flex-direction: column;
 
@@ -47,10 +46,11 @@
 }
 .what-we-do__item-img-wrap {
   min-height: 145px;
+  max-height: 145px;
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 .what-we-do__item-title {
   font-size: 18px;
@@ -58,7 +58,7 @@
   text-transform: uppercase;
   color: $purple;
   font-weight: bold;
-  margin-bottom: 8px;
+  margin-bottom: 3px;
 }
 .what-we-do__item-description {
   font-size: 15px;
@@ -71,6 +71,10 @@
     &::before {
       right: 0;
     }
+  }
+  .what-we-do__list {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 @media (max-width: 900px) {

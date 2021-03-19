@@ -50,9 +50,17 @@
 .footer-menu__submenu-text--lh28 {
   line-height: 28px;
 }
-.footer-menu__submenu {
-
+.footer-menu__submenu-text a,
+.footer-menu__submenu-link {
+  transition: all 0.3s ease-out;
 }
+.footer-menu__submenu-link:hover,
+.footer-menu__submenu-link:focus,
+.footer-menu__submenu-text a:hover,
+.footer-menu__submenu-text a:focus {
+  color: $orange;
+}
+
 @media (max-width: 1250px) {
   .footer-menu__item,
   .footer-menu__item:last-child {

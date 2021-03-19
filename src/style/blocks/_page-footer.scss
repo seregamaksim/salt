@@ -13,12 +13,14 @@
   width: 100%;
   max-width: 300px;
   margin-right: 105px;
-  // min-height: 300px;
-  // background-color: $orange;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+
 }
 .page-footer__container {
-  padding-top: 55px;
-  padding-bottom: 50px;
+  padding-top: 57px;
+  padding-bottom: 44px;
   display: flex;
   align-items: flex-start;
 }
@@ -29,7 +31,7 @@
   display: inline-block;
   position: absolute;
   right: 33px;
-  bottom: 33px;
+  bottom: 28px;
 }
 
 .page-footer__copyright {
